@@ -10,24 +10,33 @@ from bot.handlers import register_user_handlers
 
 
 async def main() -> None:
-    logging.basicConfig(level=logging.DEBUG, filename='../logs/bot.log', filemode='w',
+    logging.basicConfig(level=logging.DEBUG, filename='./logs/bot.log', filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s')
 
     dp = Dispatcher()
-    bot = Bot(token=os.getenv('token'))
+    token = os.getenv('Token')
+    print(f'Token: {token}')
+    bot = Bot(token=token)
 
     register_user_commands(dp)
     register_user_handlers(dp)
 
+    print(f"Username: {os.getenv('POSTGRES_USER')}")
+    print(f"Password: {os.getenv('POSTGRES_PASSWORD')}")
+    print(f"Host: {os.getenv('POSTGRES_HOST')}")
+    print(f"Database: {os.getenv('POSTGRES_DB')}")
+    print(f"Port: {os.getenv('POSTGRES_PORT')}")
     # TODO: добавить переменные БД в .env
     postgres_url = URL.create(
-        "posgtgresql+asyncpg",
-        username=os.getenv('DB_USER'),
-        host="localhost",
-        database=os.getenv("DB_NAME"),
-        post=os.getenv("DB_PORT")
+        "postgresql+asyncpg",
+        username=os.getenv('POSTGRES_USER'),
+        password=os.getenv('POSTGRES_PASSWORD'),
+        host=os.getenv('POSTGRES_HOST'),
+        database=os.getenv("POSTGRES_DB"),
+        port=os.getenv("POSTGRES_PORT")
     )
-    async_engine = create_async_engine()
+
+    async_engine = create_async_engine(postgres_url)
     session_maker = get_session_maker(async_engine)
     await proceed_schemas(async_engine, BaseModel.metadata)
 
