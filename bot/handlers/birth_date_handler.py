@@ -7,7 +7,7 @@ from datetime import datetime
 async def process_birth_date(message: types.Message, state: FSMContext):
     try:
         # Try parsing the date to ensure it's in the correct format
-        birth_date = datetime.strptime(message.text, '%Y-%m-%d')
+        birth_date = datetime.strptime(message.text, '%d-%m-%Y')
         await state.update_data(birth_date=message.text)
 
         user_data = await state.get_data()

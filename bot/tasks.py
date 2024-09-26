@@ -3,6 +3,8 @@ from celery.schedules import crontab
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+
 import time
 import os
 
@@ -31,10 +33,13 @@ def fill_form_and_screenshot(data):
         # Fill form
         driver.find_element_by_name('name').send_keys(data['name'])
         driver.find_element_by_name('surname').send_keys(data['surname'])
+        driver.find_element(By.CLASS_NAME, "b24-form-btn")
+        time.sleep(2)
         driver.find_element_by_name('email').send_keys(data['email'])
         driver.find_element_by_name('phone').send_keys(data['phone'])
+        driver.find_element(By.CLASS_NAME, "b24-form-btn")
+        time.sleep(2)
         driver.find_element_by_name('birthday').send_keys(data['birthday'])
-
         # Submit form
         driver.find_element_by_name('submit').click()
 

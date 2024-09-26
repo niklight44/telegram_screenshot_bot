@@ -1,0 +1,70 @@
+2024-09-26 09:24:24,122 - INFO - select pg_catalog.version()
+2024-09-26 09:24:24,148 - INFO - [raw sql] ()
+2024-09-26 09:24:24,151 - INFO - select current_schema()
+2024-09-26 09:24:24,152 - INFO - [raw sql] ()
+2024-09-26 09:24:24,153 - INFO - show standard_conforming_strings
+2024-09-26 09:24:24,154 - INFO - [raw sql] ()
+2024-09-26 09:24:24,155 - INFO - BEGIN (implicit)
+2024-09-26 09:24:24,161 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2024-09-26 09:24:24,166 - INFO - [generated in 0.00560s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2024-09-26 09:24:24,174 - INFO - 
+CREATE TABLE users (
+	user_id SERIAL NOT NULL, 
+	name VARCHAR(36), 
+	surname VARCHAR(36), 
+	email VARCHAR(100), 
+	phone VARCHAR(100), 
+	birthday DATE, 
+	PRIMARY KEY (user_id), 
+	UNIQUE (user_id)
+)
+
+
+2024-09-26 09:24:24,174 - INFO - [no key 0.00058s] ()
+2024-09-26 09:24:24,216 - INFO - COMMIT
+2024-09-26 09:24:24,234 - INFO - Start polling
+2024-09-26 09:24:24,592 - INFO - Run polling for bot @test12341248247_bot id=7643953752 - 'Bot Test'
+2024-09-26 09:24:25,162 - INFO - Update id=78178616 is handled. Duration 457 ms by bot id=7643953752
+2024-09-26 09:24:42,521 - INFO - Update id=78178617 is handled. Duration 360 ms by bot id=7643953752
+2024-09-26 09:47:09,127 - INFO - Update id=78178618 is handled. Duration 319 ms by bot id=7643953752
+2024-09-26 09:47:21,532 - INFO - Update id=78178619 is handled. Duration 108 ms by bot id=7643953752
+2024-09-26 09:47:25,999 - INFO - Update id=78178620 is handled. Duration 102 ms by bot id=7643953752
+2024-09-26 09:47:33,588 - INFO - Update id=78178621 is handled. Duration 105 ms by bot id=7643953752
+2024-09-26 09:47:51,968 - INFO - Update id=78178622 is not handled. Duration 313 ms by bot id=7643953752
+2024-09-26 09:47:51,969 - ERROR - Cause exception while process update id=78178622 by bot id=7643953752
+AttributeError: 'FSMContext' object has no attribute 'finish'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/app/bot/handlers/birth_date_handler.py", line 17, in process_birth_date
+    await state.finish()
+AttributeError: 'FSMContext' object has no attribute 'finish'
+2024-09-26 10:36:28,836 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-09-26 10:36:28,837 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
+2024-09-26 10:36:40,057 - INFO - Connection established (tryings = 1, bot id = 7643953752)

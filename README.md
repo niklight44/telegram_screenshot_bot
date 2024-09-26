@@ -2,6 +2,10 @@
 
 1) Run this command in terminal:
 ```cmd
+docker-compose up -d
+```
+1.1) Run this command:
+```cmd
 python -m bot
 ```
 2) Go to telegram bot:
