@@ -50,3 +50,10 @@ def fill_form_and_screenshot(data):
         return screenshot_path
     finally:
         driver.quit()
+
+
+@app.task
+def save_user_data(data):
+    """Saves user data to DB tables (queue and user)"""
+    ...
+    # Chat, how can I save data to user model?

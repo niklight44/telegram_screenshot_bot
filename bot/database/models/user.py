@@ -1,7 +1,6 @@
 from sqlalchemy import Column, Integer, VARCHAR, DATE
 
-from .base import BaseModel
-
+from bot.database.models.base import BaseModel
 
 
 class User(BaseModel):
