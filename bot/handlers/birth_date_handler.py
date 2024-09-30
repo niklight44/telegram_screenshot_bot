@@ -1,36 +1,51 @@
+import os
+
 from aiogram import types
 from aiogram.fsm.context import FSMContext
 from datetime import datetime
+
+from sqlalchemy import URL
 from sqlalchemy.orm import sessionmaker
 from ..database import User, UserQueue  # Import the correct models
-from ..database import engine  # Your database engine
+from ..database.engine import create_async_engine  # Your database engine
 
+
+postgres_url = URL.create(
+        "postgresql+asyncpg",
+        username=os.getenv('POSTGRES_USER'),
+        password=os.getenv('POSTGRES_PASSWORD'),
+        host=os.getenv('POSTGRES_HOST'),
+        database=os.getenv("POSTGRES_DB"),
+        port=os.getenv("POSTGRES_PORT")
+    )
+
+async_engine = create_async_engine(postgres_url)
 # Setup SQLAlchemy session
-Session = sessionmaker(bind=engine)
+Session = sessionmaker(bind=async_engine)
 
 
 async def process_birth_date(message: types.Message, state: FSMContext):
-    session = Session()  # Create a new session
+    session = Session()  # Creates a new session
 
     try:
-        # Try parsing the date to ensure it's in the correct format
+        # Trying parsing the date to ensure it's in the correct format
         birth_date = datetime.strptime(message.text, '%d-%m-%Y')
         await state.update_data(birth_date=birth_date)  # Store parsed date
 
-        # Retrieve user data from FSMContext
+        # Retrieves user data from FSMContext
         user_data = await state.get_data()
 
         # Assuming user data includes name, surname, email, etc.
         user_id = message.from_user.id  # Using Telegram's user_id
 
-        # Check if the user exists in the database
+        # Checks if the user exists in the database
         user = session.query(User).filter_by(user_id=user_id).first()
 
         if not user:
-            # If user doesn't exist, create a new one
+            # If user doesn't exist, we will create a new one
             user = User(
                 user_id=user_id,
-                name=user_data['name'],  # Assuming 'name' is in state data
+                name=user_data['name'],
                 surname=user_data['surname'],
                 email=user_data['email'],
                 phone=user_data['phone'],
@@ -38,11 +53,11 @@ async def process_birth_date(message: types.Message, state: FSMContext):
             )
             session.add(user)
 
-        # Add the user to the queue (assuming user_id is a ForeignKey in UserQueue)
+        # Adds the user to the queue (user_id is a ForeignKey in UserQueue)
         user_queue = UserQueue(user_id=user.user_id)
         session.add(user_queue)
 
-        # Commit the transaction to save the user and the queue entry
+        # Commits the transaction to save the user and the queue entry
         session.commit()
 
         await message.answer("Спасибо, ваши данные и очередь сохранены!")
