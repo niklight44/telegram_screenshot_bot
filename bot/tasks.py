@@ -8,13 +8,13 @@ from selenium.webdriver.common.by import By
 import time
 import os
 
-app = Celery('tasks', broker='redis://redis:6379/0')  # Use Docker's Redis service
+app = Celery('tasks', broker='redis://redis:6379/0')  # Celery runs in Docker's Redis service
 
 # Setup periodic task
 app.conf.beat_schedule = {
     'fill-form-and-screenshot-every-10-minutes': {
         'task': 'tasks.fill_form_and_screenshot',
-        'schedule': crontab(minute='*/10'),  # Run every 10 minutes
+        'schedule': crontab(minute='*/10'),  # Runs every 10 minutes
         'args': ({'name': 'John', 'surname': 'Doe', 'email': 'john@example.com', 'phone': '1234567890', 'birthday': '1990-01-01', 'user_id': 1},)
     },
 }

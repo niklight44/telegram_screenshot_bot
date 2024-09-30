@@ -7,7 +7,7 @@ from sqlalchemy.engine import URL
 from bot.commands import register_user_commands
 from bot.database import create_async_engine, get_session_maker, BaseModel, proceed_schemas
 from bot.handlers import register_user_handlers
-
+from tasks import app
 
 async def main() -> None:
     logging.basicConfig(level=logging.DEBUG, filename='./logs/bot.log', filemode='w',
@@ -39,6 +39,9 @@ async def main() -> None:
     async_engine = create_async_engine(postgres_url)
     session_maker = get_session_maker(async_engine)
     await proceed_schemas(async_engine, BaseModel.metadata)
+
+    # Starting Celery app
+    app.start()
 
     await dp.start_polling(bot)
 
