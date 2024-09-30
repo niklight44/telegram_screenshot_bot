@@ -16,6 +16,7 @@ class User(BaseModel):
     email = Column(VARCHAR(100))
     phone = Column(VARCHAR(100))
     birthday = Column(DATE)
+    chat_id = Column(VARCHAR(50))
 
     def __str__(self):
         return f"User ID: {self.id} \n " \

@@ -14,6 +14,7 @@ from .database import User
 
 import time
 from .loggers.celery_logger import logger
+from bot import TELEGRAM_BOT
 
 postgres_url = URL.create(
         "postgresql+asyncpg",
@@ -65,7 +66,7 @@ def fill_form_and_screenshot():
         'email': user.email,
         'phone': user.phone,
         'birthday': user.birthday.strftime('%Y-%m-%d'),  # Convert to string if necessary
-        'user_id': user.user_id
+        'chat_id': user.chat_id
     }
 
     logger.info(f'Filling form and making screenshot for user {user.user_id}')
@@ -94,6 +95,9 @@ def fill_form_and_screenshot():
         # Screenshot
         screenshot_path = f"screenshots/{time.strftime('%Y-%m-%d_%H:%M')}_{data['user_id']}.jpg"
         driver.save_screenshot(screenshot_path)
+
+        with open(screenshot_path, 'rb') as photo:
+            TELEGRAM_BOT.send_photo(chat_id=data['chat_id'], photo=photo, caption="Вот ваш обещанный скриншот!")
 
         return screenshot_path
     finally:

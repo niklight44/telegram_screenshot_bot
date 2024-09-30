@@ -51,7 +51,8 @@ async def process_birth_date(message: types.Message, state: FSMContext):
                     surname=user_data['surname'],
                     email=user_data['email'],
                     phone=user_data['phone'],
-                    birthday=birth_date
+                    birthday=birth_date,
+                    chat_id=str(message.chat.id)
                 )
                 session.add(user)
                 await session.commit()  # Commit after adding user
@@ -65,6 +66,7 @@ async def process_birth_date(message: types.Message, state: FSMContext):
                 await session.commit()
 
             await message.answer("Спасибо, ваши данные и очередь сохранены!")
+            await message.answer("Скоро я отправлю вам скриншот с заполнением формы")
             await state.clear()
 
         except ValueError:

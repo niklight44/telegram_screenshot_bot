@@ -8,16 +8,13 @@ from bot.commands import register_user_commands
 from bot.database import create_async_engine, get_session_maker, BaseModel, proceed_schemas
 from bot.handlers import register_user_handlers
 from bot.tasks import app
-
+from bot import TELEGRAM_BOT
 
 async def main() -> None:
     logging.basicConfig(level=logging.DEBUG, filename='./logs/bot.log', filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s')
 
     dp = Dispatcher()
-    token = os.getenv('Token')
-    print(f'Token: {token}')
-    bot = Bot(token=token)
 
     register_user_commands(dp)
     register_user_handlers(dp)
@@ -44,7 +41,7 @@ async def main() -> None:
     # Starting Celery app
     # app.start()
 
-    await dp.start_polling(bot)
+    await dp.start_polling(TELEGRAM_BOT)
 
 
 if __name__ == "__main__":
