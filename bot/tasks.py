@@ -8,12 +8,12 @@ from selenium.webdriver.common.by import By
 from sqlalchemy import URL
 from sqlalchemy.orm import sessionmaker
 
-from bot.database import UserQueue
-from bot.database.engine import create_async_engine  # Import your DB engine
-from bot.database import User  # Import your User model
+from .database import UserQueue
+from .database.engine import create_async_engine
+from .database import User
 
 import time
-from loggers.celery_logger import logger
+from .loggers.celery_logger import logger
 
 postgres_url = URL.create(
         "postgresql+asyncpg",

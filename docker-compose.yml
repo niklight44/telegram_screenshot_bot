@@ -17,20 +17,23 @@ services:
   celery_worker:
     build: .
     container_name: celery_worker
-    command: celery -A tasks worker --loglevel=info
+    command: celery -A bot.tasks worker --loglevel=info
     depends_on:
       - redis
     volumes:
       - .:/app
+    working_dir: /app
 
   celery_beat:
     build: .
     container_name: celery_beat
-    command: celery -A tasks beat --loglevel=info
+    command: celery -A bot.tasks beat --loglevel=info
     depends_on:
       - redis
     volumes:
       - .:/app
+    working_dir: /app
+
 
   db:
     image: postgres:13-alpine

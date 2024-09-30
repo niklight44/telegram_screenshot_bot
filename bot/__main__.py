@@ -7,8 +7,7 @@ from sqlalchemy.engine import URL
 from bot.commands import register_user_commands
 from bot.database import create_async_engine, get_session_maker, BaseModel, proceed_schemas
 from bot.handlers import register_user_handlers
-from tasks import app
-
+from bot.tasks import app
 
 
 async def main() -> None:
@@ -43,7 +42,7 @@ async def main() -> None:
     await proceed_schemas(async_engine, BaseModel.metadata)
 
     # Starting Celery app
-    app.start()
+    # app.start()
 
     await dp.start_polling(bot)
 

@@ -1,115 +1,49 @@
-2024-09-26 09:24:24,122 - INFO - select pg_catalog.version()
-2024-09-26 09:24:24,148 - INFO - [raw sql] ()
-2024-09-26 09:24:24,151 - INFO - select current_schema()
-2024-09-26 09:24:24,152 - INFO - [raw sql] ()
-2024-09-26 09:24:24,153 - INFO - show standard_conforming_strings
-2024-09-26 09:24:24,154 - INFO - [raw sql] ()
-2024-09-26 09:24:24,155 - INFO - BEGIN (implicit)
-2024-09-26 09:24:24,161 - INFO - SELECT pg_catalog.pg_class.relname 
+2024-09-30 18:47:44,125 - INFO - select pg_catalog.version()
+2024-09-30 18:47:44,127 - INFO - [raw sql] ()
+2024-09-30 18:47:44,131 - INFO - select current_schema()
+2024-09-30 18:47:44,132 - INFO - [raw sql] ()
+2024-09-30 18:47:44,146 - INFO - show standard_conforming_strings
+2024-09-30 18:47:44,147 - INFO - [raw sql] ()
+2024-09-30 18:47:44,150 - INFO - BEGIN (implicit)
+2024-09-30 18:47:44,157 - INFO - SELECT pg_catalog.pg_class.relname 
 FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
 WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-2024-09-26 09:24:24,166 - INFO - [generated in 0.00560s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-2024-09-26 09:24:24,174 - INFO - 
+2024-09-30 18:47:44,158 - INFO - [generated in 0.00116s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2024-09-30 18:47:44,166 - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
+2024-09-30 18:47:44,167 - INFO - [cached since 0.01045s ago] ('user_queue', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+2024-09-30 18:47:44,170 - INFO - 
 CREATE TABLE users (
-	user_id SERIAL NOT NULL, 
+	id SERIAL NOT NULL, 
 	name VARCHAR(36), 
 	surname VARCHAR(36), 
 	email VARCHAR(100), 
 	phone VARCHAR(100), 
 	birthday DATE, 
-	PRIMARY KEY (user_id), 
-	UNIQUE (user_id)
+	PRIMARY KEY (id), 
+	UNIQUE (id)
 )
 
 
-2024-09-26 09:24:24,174 - INFO - [no key 0.00058s] ()
-2024-09-26 09:24:24,216 - INFO - COMMIT
-2024-09-26 09:24:24,234 - INFO - Start polling
-2024-09-26 09:24:24,592 - INFO - Run polling for bot @test12341248247_bot id=7643953752 - 'Bot Test'
-2024-09-26 09:24:25,162 - INFO - Update id=78178616 is handled. Duration 457 ms by bot id=7643953752
-2024-09-26 09:24:42,521 - INFO - Update id=78178617 is handled. Duration 360 ms by bot id=7643953752
-2024-09-26 09:47:09,127 - INFO - Update id=78178618 is handled. Duration 319 ms by bot id=7643953752
-2024-09-26 09:47:21,532 - INFO - Update id=78178619 is handled. Duration 108 ms by bot id=7643953752
-2024-09-26 09:47:25,999 - INFO - Update id=78178620 is handled. Duration 102 ms by bot id=7643953752
-2024-09-26 09:47:33,588 - INFO - Update id=78178621 is handled. Duration 105 ms by bot id=7643953752
-2024-09-26 09:47:51,968 - INFO - Update id=78178622 is not handled. Duration 313 ms by bot id=7643953752
-2024-09-26 09:47:51,969 - ERROR - Cause exception while process update id=78178622 by bot id=7643953752
-AttributeError: 'FSMContext' object has no attribute 'finish'
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
-    response = await self.feed_update(bot, update, **kwargs)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
-    response = await self.update.wrap_outer_middleware(
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
-    return await handler(event, data)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
-    return await wrapped()
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
-    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
-    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
-    return await self._propagate_event(
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
-    response = await observer.trigger(event, **kwargs)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
-    return await wrapped_inner(event, kwargs)
-  File "/usr/local/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
-    return await wrapped()
-  File "/app/bot/handlers/birth_date_handler.py", line 17, in process_birth_date
-    await state.finish()
-AttributeError: 'FSMContext' object has no attribute 'finish'
-2024-09-26 10:36:28,836 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-26 10:36:28,837 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-26 10:36:40,057 - INFO - Connection established (tryings = 1, bot id = 7643953752)
-2024-09-26 16:19:57,359 - INFO - Update id=78178623 is handled. Duration 618 ms by bot id=7643953752
-2024-09-26 18:29:10,523 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-26 18:29:10,526 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-26 18:29:14,046 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
-2024-09-26 18:29:14,047 - WARNING - Sleep for 1.112548 seconds and try again... (tryings = 1, bot id = 7643953752)
-2024-09-26 18:29:25,490 - INFO - Connection established (tryings = 2, bot id = 7643953752)
-2024-09-26 21:02:43,902 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-26 21:02:45,055 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-27 08:17:33,503 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-27 08:17:33,503 - WARNING - Sleep for 1.358540 seconds and try again... (tryings = 1, bot id = 7643953752)
-2024-09-27 08:17:45,098 - INFO - Connection established (tryings = 2, bot id = 7643953752)
-2024-09-27 13:49:13,280 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-27 13:49:13,281 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-27 13:49:35,337 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-27 13:49:35,338 - WARNING - Sleep for 1.349368 seconds and try again... (tryings = 1, bot id = 7643953752)
-2024-09-27 13:50:46,992 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
-2024-09-27 13:50:46,993 - WARNING - Sleep for 1.682865 seconds and try again... (tryings = 2, bot id = 7643953752)
-2024-09-27 13:51:09,733 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-27 13:51:09,734 - WARNING - Sleep for 2.328415 seconds and try again... (tryings = 3, bot id = 7643953752)
-2024-09-27 13:51:33,103 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-27 13:51:33,103 - WARNING - Sleep for 3.032832 seconds and try again... (tryings = 4, bot id = 7643953752)
-2024-09-27 13:51:57,181 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-27 13:51:57,182 - WARNING - Sleep for 3.959472 seconds and try again... (tryings = 5, bot id = 7643953752)
-2024-09-27 13:52:22,182 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-27 13:52:22,182 - WARNING - Sleep for 4.877406 seconds and try again... (tryings = 6, bot id = 7643953752)
-2024-09-27 13:52:46,993 - INFO - Connection established (tryings = 7, bot id = 7643953752)
-2024-09-27 20:27:21,361 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-27 20:27:22,197 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-28 06:42:34,315 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-28 06:42:34,315 - WARNING - Sleep for 1.263856 seconds and try again... (tryings = 1, bot id = 7643953752)
-2024-09-28 06:42:45,815 - INFO - Connection established (tryings = 2, bot id = 7643953752)
-2024-09-28 09:42:03,689 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-28 09:42:03,691 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-28 09:42:25,918 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
-2024-09-28 09:42:25,919 - WARNING - Sleep for 1.099086 seconds and try again... (tryings = 1, bot id = 7643953752)
-2024-09-28 09:42:48,063 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-28 09:42:48,063 - WARNING - Sleep for 1.314834 seconds and try again... (tryings = 2, bot id = 7643953752)
-2024-09-28 09:43:10,426 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-28 09:43:10,427 - WARNING - Sleep for 1.723241 seconds and try again... (tryings = 3, bot id = 7643953752)
-2024-09-28 09:43:22,396 - INFO - Connection established (tryings = 4, bot id = 7643953752)
-2024-09-28 09:45:56,693 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-2024-09-28 09:45:56,746 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
-2024-09-28 09:46:18,820 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
-2024-09-28 09:46:18,824 - WARNING - Sleep for 1.377812 seconds and try again... (tryings = 1, bot id = 7643953752)
-2024-09-28 09:46:30,577 - INFO - Connection established (tryings = 2, bot id = 7643953752)
+2024-09-30 18:47:44,170 - INFO - [no key 0.00061s] ()
+2024-09-30 18:47:44,195 - INFO - 
+CREATE TABLE user_queue (
+	id SERIAL NOT NULL, 
+	user_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id)
+)
+
+
+2024-09-30 18:47:44,196 - INFO - [no key 0.00124s] ()
+2024-09-30 18:47:44,218 - INFO - COMMIT
+2024-09-30 18:47:44,225 - INFO - Start polling
+2024-09-30 18:47:44,957 - INFO - Run polling for bot @test12341248247_bot id=7643953752 - 'Bot Test'
+2024-09-30 18:48:17,614 - INFO - Update id=78178708 is handled. Duration 1560 ms by bot id=7643953752
+2024-09-30 18:48:21,359 - INFO - Update id=78178709 is handled. Duration 225 ms by bot id=7643953752
+2024-09-30 18:48:23,782 - INFO - Update id=78178710 is handled. Duration 228 ms by bot id=7643953752
+2024-09-30 18:48:26,565 - INFO - Update id=78178711 is handled. Duration 253 ms by bot id=7643953752
+2024-09-30 18:48:29,517 - INFO - Update id=78178712 is handled. Duration 129 ms by bot id=7643953752
+2024-09-30 18:48:31,993 - INFO - Update id=78178713 is handled. Duration 198 ms by bot id=7643953752

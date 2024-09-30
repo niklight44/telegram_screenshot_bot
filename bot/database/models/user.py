@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, VARCHAR, DATE
+from sqlalchemy import Column, Integer, VARCHAR, DATE, BigInteger
 
 from bot.database.models.base import BaseModel
 
@@ -9,7 +9,7 @@ class User(BaseModel):
     """
     __tablename__ = 'users'
 
-    user_id = Column(Integer, unique=True, nullable=False, primary_key=True)
+    id = Column(Integer, unique=True, nullable=False, primary_key=True, autoincrement=True)
 
     name = Column(VARCHAR(36))
     surname = Column(VARCHAR(36))
@@ -18,7 +18,7 @@ class User(BaseModel):
     birthday = Column(DATE)
 
     def __str__(self):
-        return f"User ID: {self.user_id} \n " \
+        return f"User ID: {self.id} \n " \
                f"Name: {self.name} \n" \
                f"Surname: {self.surname} \n" \
                f"Email: {self.email} \n" \

@@ -1,75 +1,76 @@
 import os
-
 from aiogram import types
 from aiogram.fsm.context import FSMContext
 from datetime import datetime
 
 from sqlalchemy import URL
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
-from ..database import User, UserQueue  # Import the correct models
-from ..database.engine import create_async_engine  # Your database engine
+from sqlalchemy.future import select
 
+from ..database import User, UserQueue
 
+# Create the database URL
 postgres_url = URL.create(
-        "postgresql+asyncpg",
-        username=os.getenv('POSTGRES_USER'),
-        password=os.getenv('POSTGRES_PASSWORD'),
-        host=os.getenv('POSTGRES_HOST'),
-        database=os.getenv("POSTGRES_DB"),
-        port=os.getenv("POSTGRES_PORT")
-    )
+    "postgresql+asyncpg",
+    username=os.getenv('POSTGRES_USER'),
+    password=os.getenv('POSTGRES_PASSWORD'),
+    host=os.getenv('POSTGRES_HOST'),
+    database=os.getenv("POSTGRES_DB"),
+    port=os.getenv("POSTGRES_PORT")
+)
 
-async_engine = create_async_engine(postgres_url)
-# Setup SQLAlchemy session
-Session = sessionmaker(bind=async_engine)
+# Create the asynchronous engine
+async_engine = create_async_engine(postgres_url, future=True)
+
+# Create the asynchronous session maker
+AsyncSessionLocal = sessionmaker(
+    async_engine, class_=AsyncSession, expire_on_commit=False
+)
 
 
 async def process_birth_date(message: types.Message, state: FSMContext):
-    session = Session()  # Creates a new session
+    async with AsyncSessionLocal() as session:  # Use async context manager for the session
+        try:
+            # Try parsing the date to ensure it's in the correct format
+            birth_date = datetime.strptime(message.text, '%d.%m.%Y')
+            await state.update_data(birth_date=birth_date)  # Store parsed date
 
-    try:
-        # Trying parsing the date to ensure it's in the correct format
-        birth_date = datetime.strptime(message.text, '%d-%m-%Y')
-        await state.update_data(birth_date=birth_date)  # Store parsed date
+            # Retrieve user data from FSMContext
+            user_data = await state.get_data()
 
-        # Retrieves user data from FSMContext
-        user_data = await state.get_data()
+            # Check if the user with a specific phone exists in the database
+            stmt = select(User).where(User.phone == user_data['phone'])
+            result = await session.execute(stmt)
+            user = result.scalars().first()
 
-        # Assuming user data includes name, surname, email, etc.
-        user_id = message.from_user.id  # Using Telegram's user_id
+            if not user:
+                # If user doesn't exist, create a new one
+                user = User(
+                    name=user_data['name'],
+                    surname=user_data['surname'],
+                    email=user_data['email'],
+                    phone=user_data['phone'],
+                    birthday=birth_date
+                )
+                session.add(user)
+                await session.commit()  # Commit after adding user
 
-        # Checks if the user exists in the database
-        user = session.query(User).filter_by(user_id=user_id).first()
+            # Create a new session for adding the user to the queue
+            async with session.begin():  # Start a new transaction
+                user_queue = UserQueue(user_id=user.id)
+                session.add(user_queue)
 
-        if not user:
-            # If user doesn't exist, we will create a new one
-            user = User(
-                user_id=user_id,
-                name=user_data['name'],
-                surname=user_data['surname'],
-                email=user_data['email'],
-                phone=user_data['phone'],
-                birthday=birth_date
-            )
-            session.add(user)
+                # Commit the transaction to save the queue entry
+                await session.commit()
 
-        # Adds the user to the queue (user_id is a ForeignKey in UserQueue)
-        user_queue = UserQueue(user_id=user.user_id)
-        session.add(user_queue)
+            await message.answer("Спасибо, ваши данные и очередь сохранены!")
+            await state.clear()
 
-        # Commits the transaction to save the user and the queue entry
-        session.commit()
+        except ValueError:
+            await message.answer("Пожалуйста, введите дату в формате ДД.ММ.ГГГГ.")
 
-        await message.answer("Спасибо, ваши данные и очередь сохранены!")
-        await state.finish()
-
-    except ValueError:
-        await message.answer("Пожалуйста, введите дату в формате ГГГГ-ММ-ДД.")
-
-    except Exception as e:
-        session.rollback()  # Rollback in case of an error
-        await message.answer("Произошла ошибка при сохранении данных.")
-        raise e  # Log or handle the error as needed
-
-    finally:
-        session.close()  # Close the session
+        except Exception as e:
+            await session.rollback()  # Rollback in case of an error
+            await message.answer("Произошла ошибка при сохранении данных.")
+            raise e  # Log or handle the error as needed
