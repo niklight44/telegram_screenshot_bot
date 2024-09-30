@@ -9,6 +9,8 @@ from bot.database import create_async_engine, get_session_maker, BaseModel, proc
 from bot.handlers import register_user_handlers
 from tasks import app
 
+
+
 async def main() -> None:
     logging.basicConfig(level=logging.DEBUG, filename='./logs/bot.log', filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s')

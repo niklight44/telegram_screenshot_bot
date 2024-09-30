@@ -1,3 +1,5 @@
+import logging
+
 from celery import Celery
 from celery.schedules import crontab
 from selenium import webdriver
@@ -7,6 +9,7 @@ from selenium.webdriver.common.by import By
 
 import time
 import os
+from loggers.celery_logger import logger
 
 app = Celery('tasks', broker='redis://redis:6379/0')  # Celery runs in Docker's Redis service
 
@@ -22,6 +25,7 @@ app.conf.timezone = 'UTC'
 
 @app.task
 def fill_form_and_screenshot(data):
+    logger.info('Filling form and making screenshot')
     # Selenium setup (note the URL to access Selenium inside the Docker network)
     options = webdriver.ChromeOptions()
     options.headless = True  # Run in the background
@@ -56,4 +60,3 @@ def fill_form_and_screenshot(data):
 def save_user_data(data):
     """Saves user data to DB tables (queue and user)"""
     ...
-    # Chat, how can I save data to user model?
