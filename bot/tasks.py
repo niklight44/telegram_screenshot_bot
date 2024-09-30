@@ -44,7 +44,7 @@ session = Session()
 
 @app.task
 def fill_form_and_screenshot():
-    # Fetch user_id from UserQueue
+    # Fetching user_id from UserQueue
     user_queue_entry = session.query(UserQueue).first()
 
     if not user_queue_entry:
@@ -53,7 +53,7 @@ def fill_form_and_screenshot():
 
     user_id = user_queue_entry.user_id
 
-    # Fetch user data from the database
+    # Fetching user data from the database
     user = session.query(User).filter_by(user_id=user_id).first()
 
     if not user:
@@ -98,6 +98,11 @@ def fill_form_and_screenshot():
 
         with open(screenshot_path, 'rb') as photo:
             TELEGRAM_BOT.send_photo(chat_id=data['chat_id'], photo=photo, caption="Вот ваш обещанный скриншот!")
+
+        session.delete(user_queue_entry)
+        session.commit()
+
+        logger.info(f"User {user_id} has been removed from the UserQueue.")
 
         return screenshot_path
     finally:

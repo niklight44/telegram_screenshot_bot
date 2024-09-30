@@ -48,3 +48,8 @@ CREATE TABLE user_queue (
 2024-09-30 20:12:25,451 - INFO - Update id=78178717 is handled. Duration 180 ms by bot id=7643953752
 2024-09-30 20:12:28,563 - INFO - Update id=78178718 is handled. Duration 162 ms by bot id=7643953752
 2024-09-30 20:12:31,964 - INFO - Update id=78178719 is handled. Duration 1089 ms by bot id=7643953752
+2024-09-30 21:28:44,050 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2024-09-30 21:28:44,100 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7643953752)
+2024-09-30 21:29:06,357 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Connect call failed ('149.154.167.220', 443)]
+2024-09-30 21:29:06,358 - WARNING - Sleep for 1.408903 seconds and try again... (tryings = 1, bot id = 7643953752)
+2024-09-30 21:29:18,035 - INFO - Connection established (tryings = 2, bot id = 7643953752)
