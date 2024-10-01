@@ -16,6 +16,8 @@ services:
 
   celery_worker:
     build: .
+    env_file:
+      - ./.env
     container_name: celery_worker
     command: celery -A bot.tasks worker --loglevel=info
     depends_on:
@@ -26,6 +28,8 @@ services:
 
   celery_beat:
     build: .
+    env_file:
+      - ./.env
     container_name: celery_beat
     command: celery -A bot.tasks beat --loglevel=info
     depends_on:

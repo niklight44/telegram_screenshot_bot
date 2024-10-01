@@ -11,7 +11,8 @@ from bot.tasks import app
 from bot import TELEGRAM_BOT
 
 async def main() -> None:
-    logging.basicConfig(level=logging.DEBUG, filename='./logs/bot.log', filemode='w',
+    log_folder = os.getenv('LOG_FOLDER')
+    logging.basicConfig(level=logging.DEBUG, filename=f'{log_folder}/bot.log', filemode='w',
                         format='%(asctime)s - %(levelname)s - %(message)s')
 
     dp = Dispatcher()

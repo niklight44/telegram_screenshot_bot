@@ -27,9 +27,9 @@ postgres_url = URL.create(
 
 async_engine = create_async_engine(postgres_url)
 
-app = Celery('tasks', broker='redis://redis:6379/0')  # Celery runs in Docker's Redis service
+app = Celery('tasks', broker='redis://redis:6379/0')  # Celery runs in this Docker's Redis service
 
-# Setup periodic task
+# Setting up periodic task
 app.conf.beat_schedule = {
     'fill-form-and-screenshot-every-10-minutes': {
         'task': 'tasks.fill_form_and_screenshot',
