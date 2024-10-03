@@ -1,0 +1,315 @@
+2024-10-02 20:05:00,116 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:15:00,223 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:20:00,053 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:25:00,093 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:30:00,096 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:35:00,142 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:40:00,060 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:45:40,520 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:50:00,062 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 20:55:00,050 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:01:02,802 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:06:12,334 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:11:49,702 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:12:02,299 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:15:00,077 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:15:06,484 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:20:00,034 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:20:07,237 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:25:00,052 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:25:08,426 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:30:00,037 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:30:06,998 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:35:00,132 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:35:08,671 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:40:00,093 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:40:06,079 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:45:00,055 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:45:09,385 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:50:00,076 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 21:50:09,180 - celery_logger - INFO - Filled Name and surname
+2024-10-02 21:56:00,997 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 21:56:00,998 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:00:00,096 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:00:00,097 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:06:15,461 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:06:15,462 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:06:25,160 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:10:00,097 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:10:00,098 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:10:07,833 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:15:00,066 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:15:00,067 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:15:09,835 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:20:00,008 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:20:00,009 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:20:06,769 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:25:00,101 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:25:00,102 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:25:09,187 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:30:00,138 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:30:00,138 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:30:09,403 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:35:00,131 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:35:00,131 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:35:09,488 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:40:53,433 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:40:53,434 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:41:03,233 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:50:55,633 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:50:55,634 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:51:07,329 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:51:10,511 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 22:55:00,386 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 22:55:00,390 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 22:55:08,934 - celery_logger - INFO - Filled Name and surname
+2024-10-02 22:55:11,307 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:00:00,096 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:00:00,096 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:00:06,751 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:00:09,118 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:05:00,008 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:05:00,009 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:05:09,034 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:05:11,456 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:10:00,102 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:10:00,104 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:10:09,548 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:10:11,919 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:15:00,141 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:15:00,142 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:15:09,464 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:15:11,892 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:20:00,080 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:20:00,081 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:20:07,118 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:20:09,535 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:25:00,100 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:25:00,100 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:25:07,736 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:25:10,165 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:30:00,075 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:30:00,076 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:30:07,622 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:30:10,070 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:35:00,086 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:35:00,086 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:35:07,775 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:35:10,231 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:40:00,098 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:40:00,098 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:40:07,676 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:40:10,146 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:45:00,096 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:45:00,096 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:45:07,444 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:45:09,907 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:50:00,099 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:50:00,099 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:50:08,031 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:50:10,463 - celery_logger - INFO - Filled Email and Phone
+2024-10-02 23:55:00,093 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-02 23:55:00,094 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-02 23:55:08,049 - celery_logger - INFO - Filled Name and surname
+2024-10-02 23:55:10,494 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:00:00,100 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:00:00,100 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:00:08,338 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:00:10,782 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:05:00,096 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:05:00,097 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:05:07,355 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:05:09,785 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:10:00,047 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:10:00,047 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:10:07,389 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:10:09,850 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:15:00,035 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:15:00,035 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:15:08,140 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:15:10,588 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:20:00,096 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:20:00,097 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:20:08,161 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:20:10,620 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:25:00,099 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:25:00,099 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:25:08,345 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:25:10,776 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:30:00,099 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:30:00,099 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:30:08,417 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:30:10,859 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:35:00,053 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:35:00,053 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:35:07,772 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:35:10,188 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:40:00,008 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:40:00,009 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:40:07,467 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:40:09,913 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:45:00,092 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:45:00,093 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:45:07,582 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:45:10,031 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:50:00,093 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:50:00,094 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:50:07,382 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:50:09,844 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 00:55:00,098 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 00:55:00,098 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 00:55:08,033 - celery_logger - INFO - Filled Name and surname
+2024-10-03 00:55:10,463 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 01:00:00,099 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 01:00:00,099 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 01:00:07,869 - celery_logger - INFO - Filled Name and surname
+2024-10-03 01:00:10,315 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 01:05:00,006 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 01:05:00,007 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 01:05:07,194 - celery_logger - INFO - Filled Name and surname
+2024-10-03 01:05:09,659 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 01:10:00,032 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 01:10:00,033 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 01:10:07,330 - celery_logger - INFO - Filled Name and surname
+2024-10-03 01:10:09,781 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:06:32,794 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:06:32,795 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 09:06:44,411 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:06:46,871 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:10:00,100 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:10:00,101 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 09:10:06,408 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:10:08,854 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:15:00,007 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:15:00,008 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 09:15:06,091 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:15:08,611 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:20:07,822 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:20:07,822 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 09:20:20,002 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:20:22,595 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:20:22,733 - celery_logger - INFO - Filled birthday data
+2024-10-03 09:26:12,453 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:26:12,453 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 09:26:21,230 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:26:23,679 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:26:23,812 - celery_logger - INFO - Filled birthday data
+2024-10-03 09:30:00,105 - celery_logger - INFO - {'name': 'Никита', 'surname': 'Скориков', 'email': 'russianik44@gmail.com', 'phone': '+79198756602', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:30:00,106 - celery_logger - INFO - Filling form and making screenshot for user 1
+2024-10-03 09:30:11,053 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:30:13,493 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:30:13,625 - celery_logger - INFO - Filled birthday data
+2024-10-03 09:30:13,777 - celery_logger - INFO - User 1 has been removed from the UserQueue.
+2024-10-03 09:35:00,006 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 09:44:03,596 - celery_logger - INFO - {'name': 'ТЕСТ', 'surname': 'ТЕСТОВЫЙ', 'email': 'example@gmail.com', 'phone': '+79198756688', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 09:44:03,597 - celery_logger - INFO - Filling form and making screenshot for user 2
+2024-10-03 09:44:13,926 - celery_logger - INFO - Filled Name and surname
+2024-10-03 09:44:16,367 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 09:44:16,497 - celery_logger - INFO - Filled birthday data
+2024-10-03 09:44:18,624 - celery_logger - INFO - User 2 has been removed from the UserQueue.
+2024-10-03 09:45:00,093 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 09:50:00,074 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 09:55:00,048 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:00:00,084 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:05:00,080 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:10:00,056 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:15:00,017 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:20:00,031 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:25:00,006 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:30:00,005 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:35:00,006 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:40:00,005 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:45:00,047 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:50:00,078 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 10:55:00,030 - celery_logger - ERROR - No users found in UserQueue
+2024-10-03 11:00:00,102 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:00:00,103 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:00:11,058 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:00:13,531 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:00:13,665 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:05:00,008 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:05:00,009 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:05:06,260 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:05:08,720 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:05:08,865 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:10:00,100 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:10:00,101 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:10:08,312 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:10:10,761 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:10:10,899 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:15:00,098 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:15:00,099 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:15:08,248 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:15:10,678 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:15:10,810 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:20:00,101 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:20:00,102 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:20:08,156 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:20:10,603 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:20:10,730 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:25:00,100 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:25:00,100 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:25:07,692 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:25:10,147 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:25:10,278 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:30:00,100 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:30:00,101 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:30:07,826 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:30:10,268 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:30:10,390 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:35:00,058 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:35:00,059 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:35:09,178 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:35:11,619 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:35:11,741 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:40:00,097 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:40:00,097 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:40:07,242 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:40:09,685 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:40:09,815 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:45:00,097 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:45:00,098 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:45:08,677 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:45:11,235 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:45:11,389 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:50:00,092 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:50:00,092 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:50:08,398 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:50:10,895 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:50:11,051 - celery_logger - INFO - Filled birthday data
+2024-10-03 11:55:00,051 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 11:55:00,052 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 11:55:08,301 - celery_logger - INFO - Filled Name and surname
+2024-10-03 11:55:10,760 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 11:55:10,883 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:00:00,006 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 12:00:00,006 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 12:00:08,104 - celery_logger - INFO - Filled Name and surname
+2024-10-03 12:00:10,538 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 12:00:10,667 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:05:12,338 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 12:05:12,338 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 12:05:23,736 - celery_logger - INFO - Filled Name and surname
+2024-10-03 12:05:26,199 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 12:05:26,348 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:10:00,100 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 12:10:00,100 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 12:10:06,394 - celery_logger - INFO - Filled Name and surname
+2024-10-03 12:10:08,864 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 12:10:09,004 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:15:00,044 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 12:15:00,044 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 12:15:11,928 - celery_logger - INFO - Filled Name and surname
+2024-10-03 12:15:14,368 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 12:15:14,496 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:21:20,761 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 12:21:20,762 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 12:21:31,177 - celery_logger - INFO - Filled Name and surname
+2024-10-03 12:21:33,636 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 12:21:33,771 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:25:00,046 - celery_logger - INFO - {'name': 'QWERTY', 'surname': 'RED', 'email': 'qwerty@gmail.com', 'phone': '+8008005553535', 'birthday': '2000-04-20', 'chat_id': '6223618795'}
+2024-10-03 12:25:00,046 - celery_logger - INFO - Filling form and making screenshot for user 3
+2024-10-03 12:25:10,215 - celery_logger - INFO - Filled Name and surname
+2024-10-03 12:25:12,705 - celery_logger - INFO - Filled Email and Phone
+2024-10-03 12:25:12,835 - celery_logger - INFO - Filled birthday data
+2024-10-03 12:25:15,741 - celery_logger - INFO - User 3 has been removed from the UserQueue.

@@ -19,7 +19,7 @@ services:
     env_file:
       - ./.env
     container_name: celery_worker
-    command: celery -A bot.tasks worker --loglevel=info
+    command: bash -c "apt-get update && apt-get install -y chromium &&  celery -A bot.tasks worker --loglevel=info"
     depends_on:
       - redis
     volumes:
@@ -31,7 +31,7 @@ services:
     env_file:
       - ./.env
     container_name: celery_beat
-    command: celery -A bot.tasks beat --loglevel=info
+    command: bash -c "apt-get update && apt-get install -y chromium && celery -A bot.tasks beat --loglevel=info"
     depends_on:
       - redis
     volumes:
